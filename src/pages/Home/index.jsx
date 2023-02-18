@@ -1,5 +1,6 @@
 import React from 'react';
+import { Container } from './styles';
 
-const Home = () => <div>Hello World!</div>;
+const Home = () => <Container>Hello World!</Container>;
 
 export default Home;
