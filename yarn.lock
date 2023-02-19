@@ -1666,7 +1666,7 @@
 
 "@material/react-text-field@^0.15.0":
   version "0.15.0"
-  resolved "https://registry.npmjs.org/@material/react-text-field/-/react-text-field-0.15.0.tgz"
+  resolved "https://registry.yarnpkg.com/@material/react-text-field/-/react-text-field-0.15.0.tgz#01255b7a3083c5a6cf4185e59766b1d381e4069b"
   integrity sha512-kVLALtCUxTEPz0eLYUgjhOAlKlMOW4HtoabpAggVMD/tQR+e3XgqTS6WxXcvjwZZ9EoZtHrKibpfvm29Z3mu9A==
   dependencies:
     "@material/react-floating-label" "^0.15.0"
