@@ -20,6 +20,8 @@ Creation of a search page for restaurants closest to the user's location. Buildi
   * Styled Components
   * Styled Reset
   * React Text Field
+  * React Material Icon
+  * React Slick (for Carousel)
 
 
 

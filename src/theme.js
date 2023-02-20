@@ -6,7 +6,7 @@ const theme = {
     success: '#135E01',
   },
   fonts: {
-    regular: 'sans-serif',
+    regular: 'Roboto, sans-serif',
   },
 };
 export default theme;
