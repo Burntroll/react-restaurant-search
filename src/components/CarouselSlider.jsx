@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from '../pages/Home/styles';
 import { Card } from '.';
-import restaurante from '../assets/restaurante-fake.png';
+import restaurant from '../assets/restaurante-fake.png';
 
 export default function SimpleSlider() {
   const settings = {
@@ -15,10 +15,14 @@ export default function SimpleSlider() {
 
   return (
     <Carousel {...settings}>
-      <Card photo={restaurante} title="Restaurants name" />
-      <Card photo={restaurante} title="Restaurants name" />
-      <Card photo={restaurante} title="Restaurants name" />
-      <Card photo={restaurante} title="Restaurants name" />
+      <Card photo={restaurant} title="Restaurants name" />
+      <Card photo={restaurant} title="Restaurants name" />
+      <Card photo={restaurant} title="Restaurants name" />
+      <Card photo={restaurant} title="Restaurants name" />
+      <Card photo={restaurant} title="Restaurants name" />
+      <Card photo={restaurant} title="Restaurants name" />
+      <Card photo={restaurant} title="Restaurants name" />
+      <Card photo={restaurant} title="Restaurants name" />
     </Carousel>
   );
 }
