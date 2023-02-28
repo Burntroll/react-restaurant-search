@@ -8,7 +8,23 @@ import logo from '../../assets/logo.svg';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState('');
+  const [query, setQuery] = useState(null);
   const [modalOpened, setModalOpened] = useState(false);
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    adaptiveHeight: true,
+  };
+
+  function handleKeyPress(e) {
+    if (e.key === 'Enter') {
+      setQuery(inputValue);
+    }
+  }
 
   return (
     <Wrapper>
@@ -20,6 +36,7 @@ const Home = () => {
             trailingIcon={<MaterialIcon role="button" icon="search" />}>
             <Input
               value={inputValue}
+              onKeyPress={handleKeyPress}
               onChange={(event) => setInputValue(event.target.value)}
               outlined
             />
@@ -31,7 +48,7 @@ const Home = () => {
           <RestaurantCard />
         </Search>
       </Container>
-      <Map />
+      <Map query={query} />
       {/* <Modal open={modalOpened} onClose={() => setModalOpened(!modalOpened)} />*/}
     </Wrapper>
   );
