@@ -23,6 +23,7 @@ Creation of a search page for restaurants closest to the user's location. Buildi
   * React Material Icon
   * React Slick (for Carousel)
   * React Rating Starts Component
+  * Google Maps React
 
 
 
