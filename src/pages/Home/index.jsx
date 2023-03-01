@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import TextField, { Input } from '@material/react-text-field';
+import { useSelector } from 'react-redux';
 import MaterialIcon from '@material/react-material-icon/dist/index';
 import { CarouselBox, CarouselTitle, Container, Search, Logo, Wrapper } from './styles';
 import SimpleSlider from '../../components/CarouselSlider';
@@ -10,15 +11,7 @@ const Home = () => {
   const [inputValue, setInputValue] = useState('');
   const [query, setQuery] = useState(null);
   const [modalOpened, setModalOpened] = useState(false);
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    adaptiveHeight: true,
-  };
+  const { restaurants } = useSelector((state) => state.restaurants);
 
   function handleKeyPress(e) {
     if (e.key === 'Enter') {
@@ -45,7 +38,9 @@ const Home = () => {
             <CarouselTitle>Near Me</CarouselTitle>
             <SimpleSlider />
           </CarouselBox>
-          <RestaurantCard />
+          {restaurants.map((restaurant) => (
+            <RestaurantCard restaurant={restaurant} />
+          ))}
         </Search>
       </Container>
       <Map query={query} />
