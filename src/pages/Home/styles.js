@@ -7,8 +7,8 @@ export const Wrapper = styled.div`
 
 export const Container = styled.aside`
   background-color: ${(props) => props.theme.colors.background};
-  min-width: 20%;
-  max-width: 20%;
+  min-width: 22%;
+  max-width: 22%;
   height: 100vh;
   overflow-y: auto;
 `;
@@ -44,7 +44,7 @@ export const CarouselBox = styled.div`
 `;
 
 export const Carousel = styled(Slider)`
-  .slick-slider {
-    margin: 16px;
+  .slick-slide {
+    margin-right: 2.5rem;
   }
 `;
